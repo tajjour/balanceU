@@ -35,6 +35,19 @@ public class CourseClassTest {
     }
 
     @Test
+    public void testGetSchool() {
+        Course course = makeTestCourse();
+        assertEquals("testSchool", course.getSchool());
+    }
+
+    @Test
+    public void testSetSchool() {
+        Course course = makeTestCourse();
+        course.setSchool("newSchool");
+        assertEquals("newSchool", course.getSchool());
+    }
+
+    @Test
     public void testGetNumber() {
         Course course = makeTestCourse();
         assertEquals("101", course.getNumber());
@@ -125,6 +138,19 @@ public class CourseClassTest {
         List<Student> newStudentList = new ArrayList<>();
         course.setStudents(newStudentList);
         assertEquals(newStudentList, course.getStudents());
+    }
+
+    @Test
+    public void testGetWorkload() {
+        Course course = makeTestCourse();
+        assertEquals(10, course.getWorkload());
+    }
+
+    @Test
+    public void testSetWorkload() {
+        Course course = makeTestCourse();
+        course.setWorkload(20);
+        assertEquals(20, course.getWorkload());
     }
 
 }
