@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
  * Created by tajjour on 2016-11-12.
  */
 @Repository
-public interface BalanceRepository extends JpaRepository<Course,Long> {
+public interface CourseRepository extends JpaRepository<Course,Long> {
 
 }

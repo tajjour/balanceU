@@ -18,7 +18,7 @@ public class CourseClassTest {
     Professor testProfessor = new Professor();
 
     public Course makeTestCourse() {
-        Course course = new Course("101","testName", testProfessor, testStudentList, 100, 1, "testStyle");
+        Course course = new Course("testSchool","101","testName", testProfessor, testStudentList, 100, 1, "testStyle",10);
         return course;
     }
 

@@ -15,10 +15,10 @@ import java.util.List;
 @Component
 public class DatabaseInitializer implements CommandLineRunner {
 
-    private BalanceRepository balanceRepository;
+    private CourseRepository courseRepository;
 
-    public DatabaseInitializer(BalanceRepository balanceRepository){
-        this.balanceRepository = balanceRepository;
+    public DatabaseInitializer(CourseRepository courseRepository){
+        this.courseRepository = courseRepository;
     }
 
     @Override
@@ -42,9 +42,9 @@ public class DatabaseInitializer implements CommandLineRunner {
         students.add(s5);
         students.add(s6);
 
-        Course course1 = new Course("CSCI-E71","Agile Methodolgy",p1,students,15,300,"on-line");
+        Course course1 = new Course("Harvard Extension School","CSCI-E71","Agile Methodolgy",p1,students,15,300,"on-line",0);
         courses.add(course1);
 
-        balanceRepository.save(courses);
+        courseRepository.save(courses);
     }
 }

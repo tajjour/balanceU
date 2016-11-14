@@ -16,6 +16,7 @@ public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
+    private String school;              //School Name
     private String number;              //Course Code-Number
     private String name;                //Course Name
     @OneToOne(cascade = {CascadeType.ALL})
@@ -25,11 +26,13 @@ public class Course {
     private int maxNumOfEnrollments;    //Max number of enrollment in class
     private int courseLevel;            //Course Level i.e 1st year, 2nd year etc.
     private String style;               //Style of the course i.e online, on-campus, hybrid
+    private int workload;               //Hours per week
 
     public Course() {
     }
 
-    public Course(String number, String name, Professor professor, List<Student> students, int maxNumOfEnrollments, int courseLevel, String style) {
+    public Course(String school, String number, String name, Professor professor, List<Student> students, int maxNumOfEnrollments, int courseLevel, String style, int workload) {
+        this.school = school;
         this.number = number;
         this.name = name;
         this.professor = professor;
@@ -37,6 +40,22 @@ public class Course {
         this.maxNumOfEnrollments = maxNumOfEnrollments;
         this.courseLevel = courseLevel;
         this.style = style;
+        this.workload = workload;
+    }
+
+    public Course(String school, String name, String number, int workload) {
+        this.school = school;
+        this.number = number;
+        this.name = name;
+        this.workload = workload;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school;
     }
 
     public String getNumber() {
@@ -85,6 +104,14 @@ public class Course {
 
     public void setCourseLevel(int courseLevel) {
         this.courseLevel = courseLevel;
+    }
+
+    public int getWorkload() {
+        return workload;
+    }
+
+    public void setWorkload(int workload) {
+        this.workload = workload;
     }
 
     public String getStyle() {
