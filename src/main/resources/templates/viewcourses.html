@@ -5,18 +5,30 @@
     <title>View Courses</title>
 </head>
 <body>
+<<<<<<< HEAD
 <h2>This is a test page that will show the course list</h2>
 <p th:each="course : ${courses}">
+=======
+<h2>List of courses entered so far</h2>
+<p th:each="course : ${courses}">
+<h4>School:</h4>
+<div th:text="${course.school}"></div>
+>>>>>>> 0b2b8127a5c4a57a1df5b7774af6b422a834d5db
 <h4>Name:</h4>
 <div th:text="${course.name}"></div>
 <h4>Number:</h4>
 <div th:text="${course.number}"></div>
+<<<<<<< HEAD
 <h4>Max # of Enrollments:</h4>
 <div th:text="${course.maxNumOfEnrollments}"></div>
 <h4>Course Level:</h4>
 <div th:text="${course.courseLevel}"></div>
 <h4>Style:</h4>
 <div th:text="${course.style}"></div>
+=======
+<h4>Workload:</h4>
+<div th:text="${course.workload}"></div>
+>>>>>>> 0b2b8127a5c4a57a1df5b7774af6b422a834d5db
 <div>---------------------------------------------------------</div>
 </p>
 </body>
