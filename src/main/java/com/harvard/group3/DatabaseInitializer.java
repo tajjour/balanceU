@@ -42,7 +42,7 @@ public class DatabaseInitializer implements CommandLineRunner {
         students.add(s5);
         students.add(s6);
 
-        Course course1 = new Course("Harvard Extension School","CSCI-E71","Agile Methodolgy",p1,students,15,300,"on-line",0);
+        Course course1 = new Course("Harvard Extension School","CSCI-E71","Agile Methodolgy",p1,students,15,300,"on-line",15);
         courses.add(course1);
 
         courseRepository.save(courses);
