@@ -84,7 +84,7 @@ Tarek: Worked on the project to create more classes.  Setup Cucumber to handle B
 
 Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the floobits impediment that the team has had.
 
-**Screenshot of Mob Programming:** See the Mob.png screenshot attached.  This group is continuing to use Floobits to program as a Mob.
+**Screenshot of Mob Programming:** [See the Mob.png screenshot attached](https://github.com/tajjour/balanceU/blob/master/Mob.png).  This group is continuing to use Floobits to program as a Mob.
 
 **How to View Working Software:**
 
