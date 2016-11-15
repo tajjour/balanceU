@@ -67,7 +67,7 @@ Only development team members participated in estimating backlog item sizes.
 
 **Task Decomposition**: See inside each sprint backlog item, under chacklist labeled "Tasks."
 
-**Sprint Burndown Chart**: **[Will paste in before deadline]**
+**Sprint Burndown Chart**: [Click here to view the burndown chart.](https://docs.google.com/spreadsheets/d/1pRzY4CoVsj4yWWyvKTktf3S83xcvEK48YNCmer6jZO8/edit#gid=0)
 
 **Daily Scrums:** 11/8; 11/10; 11/11; 11/12; 11/13.
 
