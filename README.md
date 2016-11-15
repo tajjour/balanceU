@@ -74,13 +74,13 @@ Only development team members participated in estimating backlog item sizes.
 *Documentation of 11/12 Daily Scrum:
 
 
-Damian:  We need a quick update from you on what you've done in the past 24 hours and what you intend to do in the next 24 hours.  Also any luck writing a BDD test in Cucumber?
+Damian:  We need a quick update from you on what you've done in the past 24 hours and what you intend to do in the next 24 hours.  Also any luck writing a BDD test in Cucumber?  **Update from Slack**: Damian did get Cucumber working and added a BDD test to the project.  **Impediment**: problems getting floobits working.
 
-Alec: Wrote unit tests.  Plans on managing the github requests from all of our updates.  Impediment: problems getting code to compile
+Alec: Wrote unit tests.  Plans on managing the github requests from all of our updates.  **Impediment**: problems getting code to compile
 
-Than: Rebuilt the project so that it now loads.  Plans to pickup an item off the product backlog.
+Than: Rebuilt the project so that it now loads.  Plans to pickup an item off the product backlog.  **Impediment**: Issues with Floobits.
 
-Tarek: Worked on the project to create more classes.  Setup Cucumber to handle BDD.  Will help Than with implementing fixed code.  Continuing to support WebEx and Teleconferences.
+Tarek: Worked on the project to create more classes.  Setup Cucumber to handle BDD.  Will help Than with implementing fixed code.  Continuing to support WebEx and Teleconferences. **Impediment**: Issues with floobits.
 
 Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the floobits impediment that the team has had.
 
