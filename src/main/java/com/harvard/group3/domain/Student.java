@@ -10,6 +10,7 @@ public class Student extends Person {
     private String program;
     private double gpa;
     private int gradyear;
+    private String studentID;
 
     public Student(){}
 
@@ -19,6 +20,7 @@ public class Student extends Person {
         this.program = program;
         this.gpa = gpa;
         this.gradyear = gradyear;
+        this.studentID = studentId;
     }
 
     public void setProgram(String program) {
@@ -54,5 +56,13 @@ public class Student extends Person {
                 ", gpa=" + gpa +
                 ", gradyear=" + gradyear +
                 '}';
+    }
+
+    public String getStudentID() {
+        return studentID;
+    }
+
+    public void setStudentID(String studentID) {
+        this.studentID = studentID;
     }
 }

@@ -18,7 +18,7 @@ public class CourseClassTest {
     Professor testProfessor = new Professor();
 
     public Course makeTestCourse() {
-        Course course = new Course("101","testName", testProfessor, testStudentList, 100, 1, "testStyle");
+        Course course = new Course("testSchool","101","testName", testProfessor, testStudentList, 100, 1, "testStyle",10);
         return course;
     }
 
@@ -32,6 +32,19 @@ public class CourseClassTest {
     public void constructorWithArgs() {
         Course course = makeTestCourse();
         assertNotNull("Null response", course);
+    }
+
+    @Test
+    public void testGetSchool() {
+        Course course = makeTestCourse();
+        assertEquals("testSchool", course.getSchool());
+    }
+
+    @Test
+    public void testSetSchool() {
+        Course course = makeTestCourse();
+        course.setSchool("newSchool");
+        assertEquals("newSchool", course.getSchool());
     }
 
     @Test
@@ -125,6 +138,19 @@ public class CourseClassTest {
         List<Student> newStudentList = new ArrayList<>();
         course.setStudents(newStudentList);
         assertEquals(newStudentList, course.getStudents());
+    }
+
+    @Test
+    public void testGetWorkload() {
+        Course course = makeTestCourse();
+        assertEquals(10, course.getWorkload());
+    }
+
+    @Test
+    public void testSetWorkload() {
+        Course course = makeTestCourse();
+        course.setWorkload(20);
+        assertEquals(20, course.getWorkload());
     }
 
 }

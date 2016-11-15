@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>View Courses</title>
+</head>
+<body>
+<h2>List of courses entered so far</h2>
+<p th:each="course : ${courses}">
+<h4>School:</h4>
+<div th:text="${course.school}"></div>
+<h4>Name:</h4>
+<div th:text="${course.name}"></div>
+<h4>Number:</h4>
+<div th:text="${course.number}"></div>
+<h4>Workload:</h4>
+<div th:text="${course.workload}"></div>
+<div>---------------------------------------------------------</div>
+</p>
+</body>
+</html>
