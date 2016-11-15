@@ -17,7 +17,7 @@
 
 **Slack Channel Name:** scrumdiddlyumptious
 
-**Git Repository:** https://github.com/ajmoeser/agile-software-project
+**Git Repository:** https://github.com/tajjour/balanceU
 
 **Product Name:** BalanceU
 
@@ -89,5 +89,7 @@ Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the
 **How to View Working Software:**
 
 **Sprint Review:** 11/14:
+
+[Link to working build.](http://54.183.213.247:8080/)
 
 The first Sprint Review was held after class on 11/14.  Two Stakeholders attended and provided feedback on the current build.  Their suggestions were primarily centered around improving the UI and adding more functionality.  We also went through the Sprint items with our Product Owner (Damian) and agreed on what was done and what will continue in our backlog.
