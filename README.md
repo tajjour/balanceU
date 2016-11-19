@@ -93,3 +93,30 @@ Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the
 [Link to working build.](http://54.183.213.247:8080/)
 
 The first Sprint Review was held after class on 11/14.  Two Stakeholders attended and provided feedback on the current build.  Their suggestions were primarily centered around improving the UI and adding more functionality.  We also went through the Sprint items with our Product Owner (Damian) and agreed on what was done and what will continue in our backlog.
+
+
+##Part 3
+
+**Forecast**: 
+
+**Forecast Rationale:** 
+
+**Current Sprint Kanban Board:** https://trello.com/b/R462ru7U/current-sprint  **Note 1**: Only dev team members participated in pulling backlog items into sprint backlog.  **Note 2:** No backlog item represented more than half the size of the spring forecast.
+
+**Task Decomposition**: See inside each sprint backlog item, under chacklist labeled "Tasks."
+
+**Sprint Burndown Chart**: [Click here to view the burndown chart.](https://docs.google.com/spreadsheets/d/1pRzY4CoVsj4yWWyvKTktf3S83xcvEK48YNCmer6jZO8/edit#gid=0)
+
+**Daily Scrums:** 
+
+
+
+**Screenshot of Mob Programming:** 
+
+**How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
+
+**Sprint Review:** 11/14:
+
+
+
+
