@@ -97,9 +97,9 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 ##Part 3
 
-**Forecast**: 
+**Forecast**: 3
 
-**Forecast Rationale:** 
+**Forecast Rationale:** Yesterday's weather (current forecast = previous velocity)
 
 **Current Sprint Kanban Board:** https://trello.com/b/R462ru7U/current-sprint  **Note 1**: Only dev team members participated in pulling backlog items into sprint backlog.  **Note 2:** No backlog item represented more than half the size of the spring forecast.
 
@@ -109,9 +109,13 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **Daily Scrums:** 
 
-
+**Documentation of [INSERT DATE] Daily Scrum:**
 
 **Screenshot of Mob Programming:** 
+
+**Continuous Integration Solution:**
+
+**Continuous Deployment Solution:**
 
 **How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
 
