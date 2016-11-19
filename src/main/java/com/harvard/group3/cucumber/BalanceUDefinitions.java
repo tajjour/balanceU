@@ -17,26 +17,39 @@ public class BalanceUDefinitions {
 
     @When("^I follow the URL to the application$")
     public URLConnection iFollowTheURLToTheApplication() throws Throwable {
+        /*
+
         try {
-            URL myURL = new URL("http://54.183.213.247:8080/");
-            URLConnection myURLConnection = myURL.openConnection();
-            myURLConnection.connect();
-            return myURLConnection; }
-        catch (Exception e) {
-        throw new PendingException();}
+
+        URL myURL = new URL("http://54.183.213.247:8080/");
+        URLConnection myURLConnection = myURL.openConnection();
+        myURLConnection.connect();
+        return myURLConnection;
+        }
+        catch (Exception e)
+        {
+        throw new PendingException();
+        }
+
+        */
+        throw new PendingException();
+
     }
+
 
     @Then("^I should see the application$")
     public void iShouldSeeTheApplication() throws Throwable {
+        /*
         URLConnection myURLConnection = iFollowTheURLToTheApplication();
         BufferedReader in = new BufferedReader(new InputStreamReader(
-                myURLConnection.getInputStream()));
+        myURLConnection.getInputStream()));
         String inputLine;
         while ((inputLine = in.readLine()) != null)
-            System.out.println(inputLine);
+        System.out.println(inputLine);
         in.close();
 
         inputLine.contains("BalanceU");
+        */
 
         throw new PendingException();
     }
