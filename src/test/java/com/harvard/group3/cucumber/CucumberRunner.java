@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
  */
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = {"src/main/java/com/harvard/group3/cucumber"}
+        features = {"src/test/java/com/harvard/group3/cucumber"}
 )
 public class CucumberRunner {
 }
