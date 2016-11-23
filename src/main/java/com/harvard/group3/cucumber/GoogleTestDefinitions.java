@@ -23,7 +23,6 @@ public class GoogleTestDefinitions {
 
     @Given("^I am on the Google search page$")
     public void iAmOnTheGoogleSearchPage() throws Throwable {
-        System.setProperty("webdriver.ie.driver","C:\\Users\\Damian\\IdeaProjects\\IEDriverServer.exe");
         DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
         caps.setCapability("ignoreZoomSetting", true);
         caps.setCapability("initialBrowserUrl", "http://www.google.com");
