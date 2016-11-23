@@ -27,7 +27,6 @@ public class GoogleTestDefinitions {
         caps.setCapability("ignoreZoomSetting", true);
         caps.setCapability("initialBrowserUrl", "http://www.google.com");
         driver = new InternetExplorerDriver(caps);
-        //throw new PendingException();
     }
 
     @And("^I search for cheese!$")
@@ -40,7 +39,6 @@ public class GoogleTestDefinitions {
 
         // Now submit the form. WebDriver will find the form for us from the element
         element.submit();
-        //throw new PendingException();
     }
 
 
