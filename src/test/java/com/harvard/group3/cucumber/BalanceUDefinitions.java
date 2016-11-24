@@ -30,7 +30,7 @@ public class BalanceUDefinitions {
     public void iFollowTheURLToTheApplication() throws Throwable {
         DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
         caps.setCapability("ignoreZoomSetting", true);
-        caps.setCapability("initialBrowserUrl", "http://54.183.213.247:8080");
+        caps.setCapability("initialBrowserUrl", "http://localhost:63342/balanceU/templates/index.html?_ijt=76io73j4u9og74oua4vam0fsmo");
         driver = new InternetExplorerDriver(caps);
     }
 
