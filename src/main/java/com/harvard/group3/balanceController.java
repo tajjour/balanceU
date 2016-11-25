@@ -27,6 +27,7 @@ public class balanceController {
         this.courseRepository = courseRepository;
     }
 
+
     @RequestMapping(value="/", method=RequestMethod.GET)
     String index(Course course){
         return "index";
