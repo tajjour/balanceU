@@ -27,7 +27,6 @@ public class balanceController {
         this.courseRepository = courseRepository;
     }
 
-
     @RequestMapping(value="/", method=RequestMethod.GET)
     String index(Course course){
         return "index";
@@ -40,17 +39,17 @@ public class balanceController {
         model.addAttribute("courses", courseRepository.findAll());
         return "index";
     }
-/*
-    @RequestMapping(value="/viewcourses", method=RequestMethod.GET)
-    String viewcourses(){
-        return "viewcourses";
-    }
-*/
+
     @RequestMapping(value = "/viewcourses", method = RequestMethod.GET)
     public String viewCourses(Model model) {
         model.addAttribute("courses", courseRepository.findAll());
         return "viewcourses";
+    }
 
+    @RequestMapping(value = "/listcourses", method = RequestMethod.GET)
+    public String listCourses(Model model) {
+        model.addAttribute("courses", courseRepository.findAll());
+        return "listcourses";
     }
 
     @RequestMapping(value = "/allCoursesInfo")
