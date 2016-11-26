@@ -107,9 +107,9 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **Sprint Burndown Chart**: [Click here to view the burndown chart.](https://docs.google.com/spreadsheets/d/1pRzY4CoVsj4yWWyvKTktf3S83xcvEK48YNCmer6jZO8/edit#gid=0)
 
-**Daily Scrums:** 
+**Daily Scrums:** 11/19, 11/21, 11/23, 11/26, 11/27
 
-**Documentation of [INSERT DATE] Daily Scrum:**
+**Documentation of [INSERT DATE] Daily Scrum:** WES WILL ADD
 
 **Screenshot of Mob Programming:** 
 
@@ -119,7 +119,7 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
 
-**Sprint Review:** 11/14:
+**Sprint Review:** 11/27:
 
 
 
