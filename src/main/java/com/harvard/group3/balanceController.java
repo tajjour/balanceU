@@ -8,6 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
 
 
 import java.util.List;
@@ -52,9 +54,9 @@ public class balanceController {
         return "listcourses";
     }
 
-    @RequestMapping(value = "/listbyschool", method = RequestMethod.GET)
-    public String listBySchool(Model model) {
-        model.addAttribute("courses", courseRepository.findAll());
+    @RequestMapping(value = "/listbyschool", method = RequestMethod.POST)
+    public String listBySchool(@ModelAttribute Course course, BindingResult errors, Model model) {
+        model.addAttribute("courses", courseRepository.findBySchool(course.getSchool()));
         return "listbyschool";
     }
 
