@@ -52,6 +52,12 @@ public class balanceController {
         return "listcourses";
     }
 
+    @RequestMapping(value = "/listbyschool", method = RequestMethod.GET)
+    public String listBySchool(Model model) {
+        model.addAttribute("courses", courseRepository.findAll());
+        return "listbyschool";
+    }
+
     @RequestMapping(value = "/allCoursesInfo")
     public List<Course> getAllCourses(){
 
