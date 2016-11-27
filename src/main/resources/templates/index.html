@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8"/>
 
-    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.1/css/bootstrap.min.css"
-          th:href="@{/webjars/bootstrap/3.3.1/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
-
-    <script src="sorttable.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css"/>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
 
     <title>BalanceU Course Input Page</title>
 </head>
 <body>
+
 <h2>This is a test page allowing input for BalanceU.</h2>
 <p>You can return to this form and add as many classes as you like, but unfortunately, you
     have to manually erase the data in the form each time (working on it).</p>
@@ -45,12 +47,16 @@
 
 <h2>List of courses entered so far</h2>
 
-<table class="table table-striped sortable">
+<table data-toggle="table"
+       data-classes="table table-hover table-condensed"
+       data-striped="true"
+       data-sort-name="School"
+       data-sort-order="desc">
     <thead>
     <tr>
-        <th>Name</th>
-        <th>School</th>
-        <th>Number</th>
+        <th data-sortable="true">Name</th>
+        <th data-sortable="true">School</th>
+        <th data-sortable="true">Number</th>
         <th>Hours</th>
     </tr>
     </thead>
