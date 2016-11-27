@@ -30,7 +30,8 @@ public class balanceController {
     }
 
     @RequestMapping(value="/", method=RequestMethod.GET)
-    String index(Course course){
+    String index(Model model, Course course){
+        model.addAttribute("courses", courseRepository.findAll());
         return "index";
     }
 
