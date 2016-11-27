@@ -2,13 +2,16 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
+
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.1/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.1/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+
+    <script src="sorttable.js"></script>
+
     <title>BalanceU Course Input Page</title>
 </head>
 <body>
 <h2>This is a test page allowing input for BalanceU.</h2>
-<h3>To see the list of courses entered so far, <a href="listcourses.html"> click here </a>.</h3>
 <p>You can return to this form and add as many classes as you like, but unfortunately, you
     have to manually erase the data in the form each time (working on it).</p>
 <form action="#" th:action="@{/}" th:object="${course}" method="post">
@@ -39,5 +42,27 @@
         </tr>
     </table>
 </form>
+
+<h2>List of courses entered so far</h2>
+
+<table class="table table-striped sortable">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>School</th>
+        <th>Number</th>
+        <th>Hours</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="course : ${courses}">
+        <td th:text="${course.name}">default</td>
+        <td th:text="${course.school}">default</td>
+        <td th:text="${course.number}">0</td>
+        <td th:text="${course.workload}">0</td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>

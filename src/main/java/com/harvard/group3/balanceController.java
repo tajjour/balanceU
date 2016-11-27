@@ -8,6 +8,8 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
 
 
 import java.util.List;
@@ -28,7 +30,8 @@ public class balanceController {
     }
 
     @RequestMapping(value="/", method=RequestMethod.GET)
-    String index(Course course){
+    String index(Model model, Course course){
+        model.addAttribute("courses", courseRepository.findAll());
         return "index";
     }
 
@@ -50,6 +53,12 @@ public class balanceController {
     public String listCourses(Model model) {
         model.addAttribute("courses", courseRepository.findAll());
         return "listcourses";
+    }
+
+    @RequestMapping(value = "/listbyschool", method = RequestMethod.POST)
+    public String listBySchool(@ModelAttribute Course course, BindingResult errors, Model model) {
+        model.addAttribute("courses", courseRepository.findBySchool(course.getSchool()));
+        return "listbyschool";
     }
 
     @RequestMapping(value = "/allCoursesInfo")
