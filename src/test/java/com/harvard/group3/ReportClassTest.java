@@ -4,83 +4,78 @@ package com.harvard.group3;
 import com.harvard.group3.domain.*;
 
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.springframework.boot.actuate.endpoint.AutoConfigurationReportEndpoint;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertEquals;
 
 public class ReportClassTest {
 
-    public Report makeTestReport() {
-        Report report = new Report("Harvard Extension School", "Programming Abstractions", "CSCI-E51", 10);
-        return report;
+    public CourseInfo makeTestReport() {
+        CourseInfo courseInfo = new Report("Harvard Extension School", "Programming Abstractions", "CSCI-E51", 10);
+        return courseInfo;
     }
 
     @Test
     public void noArgConstructorWorks() {
-        Report report = new Report();
-        assertNotNull("Null response", report);
+        CourseInfo courseInfo = new Report();
+        assertNotNull("Null response", courseInfo);
     }
 
     @Test
     public void FourArgConstructorWorks() {
-        Report report = makeTestReport();
-        assertNotNull("Null response", report);
+        CourseInfo courseInfo = makeTestReport();
+        assertNotNull("Null response", courseInfo);
     }
 
     @Test
     public void getSchool() {
-        Report report = makeTestReport();
-        assertEquals("Harvard Extension School", report.getSchool());
+        CourseInfo courseInfo = makeTestReport();
+        assertEquals("Harvard Extension School", courseInfo.getSchool());
     }
 
     @Test
     public void getName() {
-        Report report = makeTestReport();
-        assertEquals("Programming Abstractions", report.getName());
+        CourseInfo courseInfo = makeTestReport();
+        assertEquals("Programming Abstractions", courseInfo.getName());
     }
 
     @Test
     public void getNumber() {
-        Report report = makeTestReport();
-        assertEquals("CSCI-E51", report.getNumber());
+        CourseInfo courseInfo = makeTestReport();
+        assertEquals("CSCI-E51", courseInfo.getNumber());
     }
 
     @Test
     public void getWorkload() {
-        Report report = makeTestReport();
-        assertEquals(10, report.getWorkload());
+        CourseInfo courseInfo = makeTestReport();
+        assertEquals(10, courseInfo.getWorkload());
     }
 
     @Test
     public void setSchool() {
-        Report report = makeTestReport();
-        report.setSchool("Wisconsin");
-        assertEquals("Wisconsin", report.getSchool());
+        CourseInfo courseInfo = makeTestReport();
+        courseInfo.setSchool("Wisconsin");
+        assertEquals("Wisconsin", courseInfo.getSchool());
     }
 
     @Test
     public void setName() {
-        Report report = makeTestReport();
-        report.setName("Calculus 1");
-        assertEquals("Calculus 1", report.getName());
+        CourseInfo courseInfo = makeTestReport();
+        courseInfo.setName("Calculus 1");
+        assertEquals("Calculus 1", courseInfo.getName());
     }
 
     @Test
     public void setNumber() {
-        Report report = makeTestReport();
-        report.setNumber("101");
-        assertEquals("101", report.getNumber());
+        CourseInfo courseInfo = makeTestReport();
+        courseInfo.setNumber("101");
+        assertEquals("101", courseInfo.getNumber());
     }
 
     @Test
     public void setWorkload() {
-        Report report = makeTestReport();
-        report.setWorkload(18);
-        assertEquals(18, report.getWorkload());
+        CourseInfo courseInfo = makeTestReport();
+        courseInfo.setWorkload(18);
+        assertEquals(18, courseInfo.getWorkload());
     }
 }
