@@ -64,7 +64,7 @@
             <td th:if="${#fields.hasErrors('number')}" th:errors="*{number}">Course Number error message</td>
         </tr>
         <tr>
-            <td>Course Workload:</td>
+            <td>Course Workload (hours per week):</td>
             <td><input type="text" th:field="*{workload}" /></td>
             <td th:if="${#fields.hasErrors('workload')}" th:errors="*{workload}">Workload error message</td>
         </tr>
