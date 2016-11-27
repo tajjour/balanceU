@@ -138,8 +138,9 @@ Tutorials and Documentation:
 
 - Spring Documentation, at http://spring.io/guides/
 - Thymeleaf Documentation and Tutorials, at http://www.thymeleaf.org/doc/tutorials
-- John Thompson, Spring Boot Web Application Tutorial (parts 1-3), at http://springframework.guru/spring-boot-web-application-part-1-spring-initializr/
-- Eugen Baeldung, Introduction to Using Thymeleaf in Spring, at http://www.baeldung.com/thymeleaf-in-spring-mvc
+- John Thompson, "Spring Boot Web Application Tutorial" (parts 1-3), at http://springframework.guru/spring-boot-web-application-part-1-spring-initializr/
+- Eugen Baeldung, "Introduction to Using Thymeleaf in Spring," at http://www.baeldung.com/thymeleaf-in-spring-mvc
+- Jquery AZ, "An HTML table plug-in for Bootstrap: with sorting, pagination, checkbox etc.," at http://www.jquery-az.com/an-html-table-plug-in-for-bootstrap-with-sorting-pagination-checkbox-etc/
 
 
 
