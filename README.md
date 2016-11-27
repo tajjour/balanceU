@@ -121,6 +121,26 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **Sprint Review:** 11/27:
 
+##Part 4
+
+
+
+
+##Sources
+
+Open Source tools used:
+
+- Bootstrap, getbootstrap.com
+- Thymeleaf, thymeleaf.org
+- Spring Boot, spring.io
+
+Tutorials and Documentation:
+
+- Spring Documentation, at spring.io/guides/
+- Thymeleaf Documentation and Tutorials, at http://www.thymeleaf.org/doc/tutorials
+- John Thompson, Spring Boot Web Application Tutorial (parts 1-3), at springframework.guru/spring-boot-web-application-part-1-spring-initializr/
+- Eugen Baeldung, Introduction to Using Thymeleaf in Spring, at http://www.baeldung.com/thymeleaf-in-spring-mvc
+
 
 
 
