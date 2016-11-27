@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.Callable;
 
 /**
  * Created by tajjour on 2016-11-12.
@@ -44,6 +45,13 @@ public class DatabaseInitializer implements CommandLineRunner {
 
         Course course1 = new Course("Harvard Extension School","CSCI-E71","Agile Methodolgy",p1,students,15,300,"on-line",15);
         courses.add(course1);
+        Course course2 = new Course("Wisconsin", "Calculus 1", "101", 12);
+        courses.add(course2);
+        Course course3 = new Course("Georgetown University", "Intro to Psychology", "1", 8);
+        courses.add(course3);
+        Course course4 = new Course("Harvard Extension School", "Theory of Computation", "CSCI-E121", 18);
+        courses.add(course4);
+
 
         courseRepository.save(courses);
     }
