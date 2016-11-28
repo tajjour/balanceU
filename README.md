@@ -116,7 +116,7 @@ Damian: Working on Jenkins. Also working with stakeholders to refine product bac
 
 Alec: Continuing to work items in sprint. Plans to finish access list of classes.
 
-Than: Working on getting the CI working.  Also working on Bootstrap to make the interface look good.
+Than: Working on getting the CI working. Also working on Bootstrap to make the interface look good.
 
 Tarek: Working on bootstrap.  **Impediment ID**: Than and Tarek should work together to make sure they are not stepping on eachother.
 
