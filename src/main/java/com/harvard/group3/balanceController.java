@@ -46,13 +46,13 @@ public class balanceController {
     }
 
     @RequestMapping(value = "/addclass", method = RequestMethod.POST)
-    public String addClass(Course course, BindingResult bindingResult, Model model) {
+    public String submitClassReport(Course course, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) return "index";
         courseRepository.save(new Course(course.getSchool(), course.getName(), course.getNumber(), course.getWorkload()));
         model.addAttribute("courses", courseRepository.findAll());
         return "addclass";
     }
-    
+
     @RequestMapping(value = "/viewcourses", method = RequestMethod.GET)
     public String viewCourses(Model model) {
         model.addAttribute("courses", courseRepository.findAll());
@@ -73,7 +73,6 @@ public class balanceController {
 
     @RequestMapping(value = "/allCoursesInfo")
     public List<Course> getAllCourses(){
-
         return courseRepository.findAll();
     }
 }
