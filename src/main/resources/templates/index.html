@@ -5,9 +5,6 @@
 
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.1/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.1/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
-
-    <script src="sorttable.js"></script>
-
     <title>BalanceU Course Input Page</title>
 </head>
 <body>
@@ -55,12 +52,12 @@
     </tr>
     </thead>
     <tbody>
-    <tr th:each="course : ${courses}">
-        <td th:text="${course.name}">default</td>
-        <td th:text="${course.school}">default</td>
-        <td th:text="${course.number}">0</td>
-        <td th:text="${course.workload}">0</td>
-    </tr>
+        <tr th:each="course : ${courses}">
+            <td th:text="${course.name}">default</td>
+            <td th:text="${course.school}">default</td>
+            <td th:text="${course.number}">0</td>
+            <td th:text="${course.workload}">0</td>
+        </tr>
     </tbody>
 </table>
 
