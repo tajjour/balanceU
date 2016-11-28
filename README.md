@@ -129,7 +129,7 @@ Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the
 **BDD Test Results:**
 The team completed three BDD tests using Cucumber and Selenium. See BDD test result info and screenshot in the following document. https://github.com/tajjour/balanceU/blob/master/Sprint%202%20-%20BDD%20Testing%20Results.docx
 
-**Continuous Integration Solution & Continuous Deployment Solution:** Our group has configured and deployed a Jenkins server to handle this for us.  Please see the attached Jenkins screenshots in the project directory for screenshots of Jenkins in action.  It is configured to run our tests and if they pass build and deploy to the server.
+**Continuous Integration Solution & Continuous Deployment Solution:** Our group has configured and deployed a Jenkins server to handle this for us.  Please see the attached Jenkins screenshots in the project directory for screenshots of Jenkins in action.  It is configured to run our tests and if they pass build and deploy to the server. https://github.com/tajjour/balanceU/blob/master/Jenkins%20CI-CD%20Report.docx
 
 **How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
 
