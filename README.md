@@ -99,7 +99,7 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **Forecast**: 3
 
-**Forecast Rationale:** Yesterday's weather (current forecast = previous velocity)
+**Forecast Rationale:** Yesterdays weather (current forecast = previous velocity)
 
 **Current Sprint Kanban Board:** https://trello.com/b/R462ru7U/current-sprint  **Note 1**: Only dev team members participated in pulling backlog items into sprint backlog.  **Note 2:** No backlog item represented more than half the size of the spring forecast.
 
