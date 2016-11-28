@@ -105,7 +105,7 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **Task Decomposition**: See inside each sprint backlog item, under chacklist labeled "Tasks."
 
-**Sprint Burndown Chart**: [Click here to view the burndown chart.](https://docs.google.com/spreadsheets/d/1pRzY4CoVsj4yWWyvKTktf3S83xcvEK48YNCmer6jZO8/edit#gid=0)
+**Sprint Burndown Chart**: [Click here to view the burndown chart.](https://github.com/tajjour/balanceU/blob/master/Sprint2Burndown.png)
 
 **Daily Scrums:** 11/19, 11/21, 11/23, 11/26, 11/27
 
