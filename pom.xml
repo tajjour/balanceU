@@ -5,6 +5,7 @@
 
 	<groupId>com.harvard.group3</groupId>
 	<artifactId>balanceu</artifactId>
+	<version>1.0.0.RELEASE</version>
 	<packaging>war</packaging>
 
 	<name>BalanceU</name>
