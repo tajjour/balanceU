@@ -50,7 +50,7 @@ public class balanceController {
         if (bindingResult.hasErrors()) return "index";
         courseRepository.save(new Course(course.getSchool(), course.getName(), course.getNumber(), course.getWorkload()));
         model.addAttribute("courses", courseRepository.findAll());
-        return "addclass";
+        return "viewcourses";
     }
 
     @RequestMapping(value = "/viewcourses", method = RequestMethod.GET)
