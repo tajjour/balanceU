@@ -107,11 +107,24 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **Sprint Burndown Chart**: [Click here to view the burndown chart.](https://docs.google.com/spreadsheets/d/1pRzY4CoVsj4yWWyvKTktf3S83xcvEK48YNCmer6jZO8/edit#gid=0)
 
-**Daily Scrums:** 
+**Daily Scrums:** 11/19, 11/21, 11/23, 11/26, 11/27
 
 **Documentation of [INSERT DATE] Daily Scrum:**
+*Documentation of 11/21 Daily Scrum:
 
-**Screenshot of Mob Programming:** 
+Damian: Working on Jenkins.  Also working with stakeholders to refine product backlog.  May need help from Than with getting Jenkins setup.
+
+Alec: Continuing to work items in sprint.  Plans to finish access list of classes.
+
+Than: Working on getting the CI working.  Also working on Bootstrap to make the interface look good.
+
+Tarek: Working on bootstrap.  **Impediment ID**: Than and Tarek should work together to make sure they are not stepping on eachother.
+
+Walt: Acting as stakeholder.  Will continue to work with Damian on tracking 
+
+Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the floobits as a pair and helping resolve impediments.
+
+**Screenshot of Pair Programming:** [See the Mob.png screenshot attached](https://github.com/tajjour/balanceU/blob/master/pairProgramming.jpg).  This group is continuing to use Floobits to program as a Pair or Mob.
 
 **Continuous Integration Solution:**
 
@@ -119,7 +132,28 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
 
-**Sprint Review:** 11/14:
+**Sprint Review:** 11/27:
+
+##Part 4
+
+
+
+
+##Sources
+
+Open Source tools used:
+
+- Bootstrap, getbootstrap.com
+- Thymeleaf, thymeleaf.org
+- Spring Boot, spring.io
+
+Tutorials and Documentation:
+
+- Spring Documentation, at http://spring.io/guides/
+- Thymeleaf Documentation and Tutorials, at http://www.thymeleaf.org/doc/tutorials
+- John Thompson, "Spring Boot Web Application Tutorial" (parts 1-3), at http://springframework.guru/spring-boot-web-application-part-1-spring-initializr/
+- Eugen Baeldung, "Introduction to Using Thymeleaf in Spring," at http://www.baeldung.com/thymeleaf-in-spring-mvc
+- Jquery AZ, "An HTML table plug-in for Bootstrap: with sorting, pagination, checkbox etc.," at http://www.jquery-az.com/an-html-table-plug-in-for-bootstrap-with-sorting-pagination-checkbox-etc/
 
 
 
