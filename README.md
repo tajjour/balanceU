@@ -109,7 +109,7 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **Daily Scrums:** 11/19, 11/21, 11/23, 11/26, 11/27
 
-**Documentation of [INSERT DATE] Daily Scrum:**
+**Documentation of Daily Scrum:**
 *Documentation of 11/21 Daily Scrum:
 
 Damian: Working on Jenkins.  Also working with stakeholders to refine product backlog.  May need help from Than with getting Jenkins setup.
