@@ -109,9 +109,22 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **Daily Scrums:** 11/19, 11/21, 11/23, 11/26, 11/27
 
-**Documentation of [INSERT DATE] Daily Scrum:** WES WILL ADD
+**Documentation of [INSERT DATE] Daily Scrum:**
+*Documentation of 11/21 Daily Scrum:
 
-**Screenshot of Mob Programming:** 
+Damian: Working on Jenkins.  Also working with stakeholders to refine product backlog.  May need help from Than with getting Jenkins setup.
+
+Alec: Continuing to work items in sprint.  Plans to finish access list of classes.
+
+Than: Working on getting the CI working.  Also working on Bootstrap to make the interface look good.
+
+Tarek: Working on bootstrap.  **Impediment ID**: Than and Tarek should work together to make sure they are not stepping on eachother.
+
+Walt: Acting as stakeholder.  Will continue to work with Damian on tracking 
+
+Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the floobits as a pair and helping resolve impediments.
+
+**Screenshot of Pair Programming:** [See the Mob.png screenshot attached](https://github.com/tajjour/balanceU/blob/master/pairProgramming.jpg).  This group is continuing to use Floobits to program as a Pair or Mob.
 
 **Continuous Integration Solution:**
 
