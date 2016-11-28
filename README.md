@@ -114,7 +114,7 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 Damian: Working on Jenkins. Also working with stakeholders to refine product backlog. May need help from Than with getting Jenkins setup.
 
-Alec: Continuing to work items in sprint.  Plans to finish access list of classes.
+Alec: Continuing to work items in sprint. Plans to finish access list of classes.
 
 Than: Working on getting the CI working.  Also working on Bootstrap to make the interface look good.
 
