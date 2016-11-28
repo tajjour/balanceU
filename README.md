@@ -112,7 +112,7 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 **Documentation of Daily Scrum:**
 *Documentation of 11/21 Daily Scrum:
 
-Damian: Working on Jenkins.  Also working with stakeholders to refine product backlog.  May need help from Than with getting Jenkins setup.
+Damian: Working on Jenkins. Also working with stakeholders to refine product backlog.  May need help from Than with getting Jenkins setup.
 
 Alec: Continuing to work items in sprint.  Plans to finish access list of classes.
 
