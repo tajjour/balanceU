@@ -124,13 +124,13 @@ Walt: Acting as stakeholder.  Will continue to work with Damian on tracking
 
 Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the floobits as a pair and helping resolve impediments.
 
-**Screenshot of Pair Programming:** [See the Mob.png screenshot attached](https://github.com/tajjour/balanceU/blob/master/pairProgramming.jpg).  This group is continuing to use Floobits to program as a Pair or Mob.
+**Screenshot of Pair Programming:** [See the Mob.png screenshot attached](https://github.com/tajjour/balanceU/blob/master/pairProgramming.jpg).  This group is continuing to use Floobits to program as a Pair or Mob.  In addition, see https://github.com/tajjour/balanceU/blob/master/moreMobProgramming.jpg , reflecting additional mobbing over Webex.
 
 **Continuous Integration Solution & Continuous Deployment Solution:** Our group has configured and deployed a Jenkins server to handle this for us.  Please see the attached Jenkins screenshots in the project directory for screenshots of Jenkins in action.  It is configured to run our tests and if they pass build and deploy to the server.
 
 **How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
 
-**Sprint Review:** 11/27: Damian has re-ordered the Product Backlog based on feedback received.  We reviewed the current state of the product.
+**Sprint Review:** 11/27: The stakeholder reviewed the current product increment, and discussed the product backlog ordering. He was happy with the progress during the sprint just completed, and believed that the current product backlog (which reflected changes from the previous sprint review on 11/14) still reflected his priorities as a user, with "View class effort" and "Search class list" as the most important things to be done.
 
 ##Part 4
 
