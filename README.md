@@ -126,13 +126,11 @@ Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the
 
 **Screenshot of Pair Programming:** [See the Mob.png screenshot attached](https://github.com/tajjour/balanceU/blob/master/pairProgramming.jpg).  This group is continuing to use Floobits to program as a Pair or Mob.
 
-**Continuous Integration Solution:**
-
-**Continuous Deployment Solution:**
+**Continuous Integration Solution & Continuous Deployment Solution:** Our group has configured and deployed a Jenkins server to handle this for us.  Please see the attached Jenkins screenshots in the project directory for screenshots of Jenkins in action.  It is configured to run our tests and if they pass build and deploy to the server.
 
 **How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
 
-**Sprint Review:** 11/27:
+**Sprint Review:** 11/27: Damian has re-ordered the Product Backlog based on feedback received.  We reviewed the current state of the product.
 
 ##Part 4
 
