@@ -36,23 +36,23 @@ public class balanceController {
     @RequestMapping(value="/", method=RequestMethod.GET)
     String index(Model model, Course course){
         model.addAttribute("courses", courseRepository.findAll());
-        return "index";
+        return "welcome";
     }
 
-    @RequestMapping(value = "/addClass.html", method = RequestMethod.POST)
-    public String addNewCourse(Course course, BindingResult bindingResult, Model model) {
+    @RequestMapping(value = "/addclass", method = RequestMethod.GET)
+    public String addClass(Model model, Course course) {
+        //model.addAttribute("courses", courseRepository.findAll());
+        return "addclass";
+    }
+
+    @RequestMapping(value = "/addclass", method = RequestMethod.POST)
+    public String addClass(Course course, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) return "index";
         courseRepository.save(new Course(course.getSchool(), course.getName(), course.getNumber(), course.getWorkload()));
         model.addAttribute("courses", courseRepository.findAll());
-        return "addClass";
+        return "addclass";
     }
-
-    @RequestMapping(value = "/addClass.html", method = RequestMethod.GET)
-    public String submitCourse(Model model) {
-        model.addAttribute("courses", courseRepository.findAll());
-        return "viewcourses";
-    }
-
+    
     @RequestMapping(value = "/viewcourses", method = RequestMethod.GET)
     public String viewCourses(Model model) {
         model.addAttribute("courses", courseRepository.findAll());

@@ -153,4 +153,5 @@ public class CourseClassTest {
         assertEquals(20, course.getWorkload());
     }
 
+
 }

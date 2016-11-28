@@ -5,7 +5,7 @@
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.1/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.1/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
     <link rel="stylesheet" th:href="@{/css/dashboard.css}" />
-    <title>View Courses</title>
+    <title>Add Courses</title>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -46,7 +46,7 @@
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <form action="#" th:action="@{/addClass.html}" th:object="${course}" method="post">
+            <form action="#" th:action="@{/templates/addclass.html}" th:object="${course}" method="post">
                 <table>
                     <tr>
                         <td>Name of School:</td>
