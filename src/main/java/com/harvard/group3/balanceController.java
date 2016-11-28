@@ -50,7 +50,7 @@ public class balanceController {
     @RequestMapping(value = "/addClass.html", method = RequestMethod.GET)
     public String submitCourse(Model model) {
         model.addAttribute("courses", courseRepository.findAll());
-        return "viewcourses";
+        return "addClass";
     }
 
     @RequestMapping(value = "/viewcourses", method = RequestMethod.GET)
