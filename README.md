@@ -127,7 +127,7 @@ Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the
 **Screenshot of Pair Programming:** [See the Mob.png screenshot attached](https://github.com/tajjour/balanceU/blob/master/pairProgramming.jpg).  This group is continuing to use Floobits to program as a Pair or Mob.  In addition, see https://github.com/tajjour/balanceU/blob/master/moreMobProgramming.jpg , reflecting additional mobbing over Webex.
 
 **BDD Test Results:**
-The completed three BDD tests using Cucumber and Selenium. See BDD test result info and screenshot in the following document. https://github.com/tajjour/balanceU/blob/master/Sprint%202%20-%20BDD%20Testing%20Results.docx
+The team completed three BDD tests using Cucumber and Selenium. See BDD test result info and screenshot in the following document. https://github.com/tajjour/balanceU/blob/master/Sprint%202%20-%20BDD%20Testing%20Results.docx
 
 **Continuous Integration Solution & Continuous Deployment Solution:** Our group has configured and deployed a Jenkins server to handle this for us.  Please see the attached Jenkins screenshots in the project directory for screenshots of Jenkins in action.  It is configured to run our tests and if they pass build and deploy to the server.
 
