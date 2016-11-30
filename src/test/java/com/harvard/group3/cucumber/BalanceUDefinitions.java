@@ -18,6 +18,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.*;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 /**
  * Created by tajjour on 2016-11-13.
@@ -30,46 +31,50 @@ public class BalanceUDefinitions {
     public void iFollowTheURLToTheApplication() throws Throwable {
         DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
         caps.setCapability("ignoreZoomSetting", true);
-        caps.setCapability("initialBrowserUrl", "http://localhost:63342/balanceU/templates/index.html?_ijt=76io73j4u9og74oua4vam0fsmo");
+        caps.setCapability("initialBrowserUrl", "http://localhost:8080");
         driver = new InternetExplorerDriver(caps);
     }
 
     @Then("^I should see the application$")
     public void iShouldSeeTheApplication() throws Throwable {
         // Confirm page title is valid.
-        assertEquals("BalanceU Course Input Page", driver.getTitle());
+        assertEquals("Welcome to BalanceU", driver.getTitle());
 
         //Close the browser
         driver.quit();
     }
 
-    @Given("^I am on the Class List page$")
-    public void iAmOnTheClassListPage() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    @Given("^I am on the home page$")
+    public void iAmOnTheHomePage() throws Throwable {
+        // Go to the welcome page.
+        DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+        caps.setCapability("ignoreZoomSetting", true);
+        caps.setCapability("initialBrowserUrl", "http://localhost:8080");
+        driver = new InternetExplorerDriver(caps);
     }
 
-    @And("^I view the university drop-down menu$")
-    public void iViewTheUniversityDropDownMenu() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    @Then("^I should see the welcome and instructions$")
+    public void iShouldSeeTheWelcomeAndInstructions() throws Throwable {
+        // Check for opening statement on welcome page.
+        assertTrue(driver.getPageSource().contains("BalanceU is"));
+
+        //Close the browser
+        driver.quit();
     }
 
-    @Then("^I should see the list of universities that have reviews$")
-    public void iShouldSeeTheListOfUniversitiesThatHaveReviews() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+    @When("^I follow the URL to the class list$")
+    public void iFollowTheURLToTheClassList() throws Throwable {
+        // Click the link to the class list.
+        driver.findElement(By.linkText("Course List")).click();
     }
 
-    @And("^I select Harvard University from the university drop-down menu$")
-    public void iSelectHarvardUniversityFromTheUniversityDropDownMenu() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
-    }
+    @Then("^I should see the class list$")
+    public void iShouldSeeTheClassList() throws Throwable {
+        // Confirm the class list is viewable
+        String innerText = driver.findElement(By.xpath("//table/thead/tr/th")).getText();
+        assertEquals("Name", innerText);
 
-    @Then("^I should see the list of reviewed Harvard University classes$")
-    public void iShouldSeeTheListOfReviewedHarvardUniversityClasses() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        //Close the browser
+        driver.quit();
     }
 }
