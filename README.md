@@ -141,7 +141,7 @@ The team completed three BDD tests using Cucumber and Selenium. See BDD test res
 
 **Forecast Rationale:** Yesterday's weather (current forecast = previous velocity)
 
-**Current Sprint Kanban Board:** https://trello.com/b/R462ru7U/current-sprint  **Note 1**: Only dev team members participated in pulling backlog items into sprint backlog.  **Note 2:** No backlog item represented more than half the size of the spring forecast.
+**Current Sprint Kanban Board:** https://trello.com/b/R462ru7U/current-sprint  **Note 1**: Only dev team members participated in pulling backlog items into sprint backlog.  **Note 2:** Backlog items representing more than half the size of the spring forecast were subdivided into smaller stories.
 
 **Task Decomposition**: See inside each sprint backlog item, under chacklist labeled "Tasks."
 
@@ -164,7 +164,7 @@ Walt:
 
 Wes: 
 
-**Screenshot of Pair Programming:** 
+**Screenshot of Pair/Mob Programming:** 
 
 **BDD Test Results:**
 The team completed three BDD tests using Cucumber and Selenium. See BDD test result info and screenshot in the following document. **UPDATE WITH NEW DOC FOR PART 4**
