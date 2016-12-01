@@ -31,7 +31,7 @@ public class BalanceUDefinitions {
     public void iFollowTheURLToTheApplication() throws Throwable {
         DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
         caps.setCapability("ignoreZoomSetting", true);
-        caps.setCapability("initialBrowserUrl", "http://localhost:8080");
+        caps.setCapability("initialBrowserUrl", "http://localhost:9090");
         driver = new InternetExplorerDriver(caps);
     }
 
@@ -49,14 +49,14 @@ public class BalanceUDefinitions {
         // Go to the welcome page.
         DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
         caps.setCapability("ignoreZoomSetting", true);
-        caps.setCapability("initialBrowserUrl", "http://localhost:8080");
+        caps.setCapability("initialBrowserUrl", "http://localhost:9090");
         driver = new InternetExplorerDriver(caps);
     }
 
     @Then("^I should see the welcome and instructions$")
     public void iShouldSeeTheWelcomeAndInstructions() throws Throwable {
         // Check for opening statement on welcome page.
-        assertTrue(driver.getPageSource().contains("BalanceU is"));
+        assertTrue(driver.getPageSource().contains("BalanceU"));
 
         //Close the browser
         driver.quit();
