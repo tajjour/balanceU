@@ -131,7 +131,7 @@ The team completed three BDD tests using Cucumber and Selenium. See BDD test res
 
 **Continuous Integration Solution & Continuous Deployment Solution:** Our group has configured and deployed a Jenkins server to handle this for us.  Please see the attached Jenkins screenshots in the project directory for screenshots of Jenkins in action.  It is configured to run our tests and if they pass build and deploy to the server. https://github.com/tajjour/balanceU/blob/master/Jenkins%20CI-CD%20Report.docx
 
-**How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
+**How to View Working Software:** [Link to working build.](http://ec2-35-162-120-2.us-west-2.compute.amazonaws.com:8080)
 
 **Sprint Review:** 11/27: The stakeholder reviewed the current product increment, and discussed the product backlog ordering. He was happy with the progress during the sprint just completed, and believed that the current product backlog (which reflected changes from the previous sprint review on 11/14) still reflected his priorities as a user, with "View class effort" and "Search class list" as the most important things to be done.
 
