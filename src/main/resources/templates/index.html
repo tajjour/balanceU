@@ -2,49 +2,19 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-<<<<<<< HEAD
-    <title>BalanceU Test Page</title>
-</head>
-<body>
-<h2>This is a test page for BalanceU.</h2>
-<form action="#" th:action="@{/}" th:object="${courses}" method="post">
-    <table>
-        <tr>
-            <td>Course Title:</td>
-            <td><input type="text" th:field="*{name}" /></td>
-        </tr>
-        <!--<tr>
-            <td>Course Number:</td>
-            <td><input type="text" th:field="*{'number'}" /></td>
-            <td th:if="${#fields.hasErrors('number')}" th:errors="*{'code'}">Course Number error message</td>
-        </tr>
-        <tr>
-            <td>Course Instructor:</td>
-            <td><input type="text" th:field="*{'professor'}" /></td>
-            <td th:if="${#fields.hasErrors('professor')}" th:errors="*{'professor'}">taughtBy error message</td>
-        </tr>
-        <tr>
-            <td>Maximum Enrollment:</td>
-            <td><input type="text" th:field="*{'maxNumOfEnrollments'}" /></td>
-            <td th:if="${#fields.hasErrors('maxNumOfEnrollments')}" th:errors="*{'maxNumOfEnrollments'}">maxNumOfEnrollments error message</td>
-        </tr>
-        <tr>
-            <td>Course Level:</td>
-            <td><input type="text" th:field="*{'level'}" /></td>
-            <td th:if="${#fields.hasErrors('level')}" th:errors="*{'level'}">level error message</td>
-        </tr>
-        <tr>
-            <td>Course Style:</td>
-            <td><input type="text" th:field="*{'style'}" /></td>
-            <td th:if="${#fields.hasErrors('style')}" th:errors="*{'style'}">style error message</td>
-        </tr>-->
-=======
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css"/>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+
     <title>BalanceU Course Input Page</title>
 </head>
 <body>
+
 <h2>This is a test page allowing input for BalanceU.</h2>
-<h3>To see the list of courses entered so far, <a href="viewcourses.html"> click here </a>.</h3>
-<p>You can return to this form and add as many classes as you like, but unforunately, you
+<p>You can return to this form and add as many classes as you like, but unfortunately, you
     have to manually erase the data in the form each time (working on it).</p>
 <form action="#" th:action="@{/}" th:object="${course}" method="post">
     <table>
@@ -69,11 +39,36 @@
             <td th:if="${#fields.hasErrors('workload')}" th:errors="*{workload}">Workload error message</td>
         </tr>
 
->>>>>>> 0b2b8127a5c4a57a1df5b7774af6b422a834d5db
         <tr>
             <td><button type="submit">Submit post</button></td>
         </tr>
     </table>
 </form>
+
+<h2>List of courses entered so far</h2>
+
+<table data-toggle="table"
+       data-classes="table table-hover table-condensed"
+       data-striped="true"
+       data-sort-name="School"
+       data-sort-order="desc">
+    <thead>
+    <tr>
+        <th data-sortable="true">Name</th>
+        <th data-sortable="true">School</th>
+        <th data-sortable="true">Number</th>
+        <th>Hours</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="course : ${courses}">
+        <td th:text="${course.name}">default</td>
+        <td th:text="${course.school}">default</td>
+        <td th:text="${course.number}">0</td>
+        <td th:text="${course.workload}">0</td>
+    </tr>
+    </tbody>
+</table>
+
 </body>
 </html>

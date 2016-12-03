@@ -28,6 +28,7 @@ public class Course {
     private String style;               //Style of the course i.e online, on-campus, hybrid
     private int workload;               //Hours per week
 
+
     public Course() {
     }
 
@@ -134,4 +135,5 @@ public class Course {
                 ", style='" + style + '\'' +
                 '}';
     }
+
 }

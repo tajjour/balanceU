@@ -5,11 +5,7 @@
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.1/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.1/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
     <link rel="stylesheet" th:href="@{/css/dashboard.css}" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css"/>
-    <script src="//code.jquery.com/jquery.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
-    <title>View Courses</title>
+    <title>Add Courses</title>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -44,37 +40,41 @@
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
                 <li><a href="/viewcourses.html">Course List</a></li>
-                <li><a href="/addclass.html">Add a Course</a></li>
+                <li class="active"><a href="/addclass.html">Add a Course</a></li>
                 <li><a href="/logout.html">Logout</a></li>
                 <li><a href="/export.html">Export Report</a></li>
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h2 class="sub-header">Courses List</h2>
-            <div class="table-responsive">
-                <table data-toggle="table"
-                       data-classes="table table-hover table-condensed"
-                       data-striped="true"
-                       data-sort-name="School"
-                       data-sort-order="desc">
-                    <thead>
+            <form action="#" th:action="@{/addclass.html}" th:object="${course}" method="post">
+                <table>
                     <tr>
-                        <th data-sortable="true">Name</th>
-                        <th data-sortable="true">School</th>
-                        <th data-sortable="true">Number</th>
-                        <th data-sortable="true">Hours</th>
+                        <td>Name of School:</td>
+                        <td><input type="text" th:field="*{school}" /></td>
+                        <td th:if="${#fields.hasErrors('school')}" th:errors="*{school}">School error message</td>
                     </tr>
-                    </thead>
-                    <tbody>
-                    <tr th:each="course : ${courses}">
-                        <td th:text="${course.name}">default</td>
-                        <td th:text="${course.school}">default</td>
-                        <td th:text="${course.number}">0</td>
-                        <td th:text="${course.workload}">0</td>
+                    <tr>
+                        <td>Course Title:</td>
+                        <td><input type="text" th:field="*{name}" /></td>
+                        <td th:if="${#fields.hasErrors('name')}" th:errors="*{name}">Name error message</td>
                     </tr>
-                    </tbody>
+                    <tr>
+                        <td>Course Number:</td>
+                        <td><input type="text" th:field="*{number}" /></td>
+                        <td th:if="${#fields.hasErrors('number')}" th:errors="*{number}">Course Number error message</td>
+                    </tr>
+                    <tr>
+                        <td>Course Workload (hours per week):</td>
+                        <td><input type="text" th:field="*{workload}" /></td>
+                        <td th:if="${#fields.hasErrors('workload')}" th:errors="*{workload}">Workload error message</td>
+                    </tr>
+
+                    <tr>
+                        <td><button type="submit">Submit post</button></td>
+                    </tr>
                 </table>
-            </div>
+            </form>
+
         </div>
     </div>
 </div>

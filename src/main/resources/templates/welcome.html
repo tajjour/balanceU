@@ -5,11 +5,7 @@
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.1/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.1/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
     <link rel="stylesheet" th:href="@{/css/dashboard.css}" />
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css"/>
-    <script src="//code.jquery.com/jquery.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
-    <title>View Courses</title>
+    <title>Welcome to BalanceU</title>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -50,31 +46,9 @@
             </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h2 class="sub-header">Courses List</h2>
-            <div class="table-responsive">
-                <table data-toggle="table"
-                       data-classes="table table-hover table-condensed"
-                       data-striped="true"
-                       data-sort-name="School"
-                       data-sort-order="desc">
-                    <thead>
-                    <tr>
-                        <th data-sortable="true">Name</th>
-                        <th data-sortable="true">School</th>
-                        <th data-sortable="true">Number</th>
-                        <th data-sortable="true">Hours</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr th:each="course : ${courses}">
-                        <td th:text="${course.name}">default</td>
-                        <td th:text="${course.school}">default</td>
-                        <td th:text="${course.number}">0</td>
-                        <td th:text="${course.workload}">0</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+            <h1 class="sub-header">What's BalanceU?</h1>
+            <p>BalanceU helps students balance their life with their school commitments by providing visibility
+                into how much time is required by each class. Wouldn't it be great if you knew how much time a class was going to take <b>before you registered</b> for it?</p>
         </div>
     </div>
 </div>

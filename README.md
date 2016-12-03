@@ -105,21 +105,92 @@ The first Sprint Review was held after class on 11/14.  Two Stakeholders attende
 
 **Task Decomposition**: See inside each sprint backlog item, under chacklist labeled "Tasks."
 
-**Sprint Burndown Chart**: [Click here to view the burndown chart.](https://docs.google.com/spreadsheets/d/1pRzY4CoVsj4yWWyvKTktf3S83xcvEK48YNCmer6jZO8/edit#gid=0)
+**Sprint Burndown Chart**: [Click here to view the burndown chart.](https://github.com/tajjour/balanceU/blob/master/Sprint2Burndown.png)
 
-**Daily Scrums:** 11/19, 11/21, 11/23, 11/26, 11/27
+**Daily Scrums:** 11/19, 11/21, 11/23, 11/26, 11/27 
 
-**Documentation of [INSERT DATE] Daily Scrum:** WES WILL ADD
+**Documentation of Daily Scrum:**
+*Documentation of 11/21 Daily Scrum:
 
-**Screenshot of Mob Programming:** 
+Damian: Working on Jenkins. Also working with stakeholders to refine product backlog. May need help from Than with getting Jenkins setup.
 
-**Continuous Integration Solution:**
+Alec: Continuing to work items in sprint. Plans to finish access list of classes.
 
-**Continuous Deployment Solution:**
+Than: Working on getting the CI working. Also working on Bootstrap to make the interface look good.
+
+Tarek: Working on bootstrap.  **Impediment ID**: Than and Tarek should work together to make sure they are not stepping on eachother.
+
+Walt: Acting as stakeholder.  Will continue to work with Damian on tracking 
+
+Wes: Acted as Scrum Master.  Tracked progress to rubric.  Will be working on the floobits as a pair and helping resolve impediments.
+
+**Screenshot of Pair Programming:** [See the Mob.png screenshot attached](https://github.com/tajjour/balanceU/blob/master/pairProgramming.jpg).  This group is continuing to use Floobits to program as a Pair or Mob.  In addition, see https://github.com/tajjour/balanceU/blob/master/moreMobProgramming.jpg , reflecting additional mobbing over Webex.
+
+**BDD Test Results:**
+The team completed three BDD tests using Cucumber and Selenium. See BDD test result info and screenshot in the following document. https://github.com/tajjour/balanceU/blob/master/Sprint%202%20-%20BDD%20Testing%20Results.docx
+
+**Continuous Integration Solution & Continuous Deployment Solution:** Our group has configured and deployed a Jenkins server to handle this for us.  Please see the attached Jenkins screenshots in the project directory for screenshots of Jenkins in action.  It is configured to run our tests and if they pass build and deploy to the server. https://github.com/tajjour/balanceU/blob/master/Jenkins%20CI-CD%20Report.docx
+
+**How to View Working Software:** [Link to working build.](http://ec2-35-162-120-2.us-west-2.compute.amazonaws.com:9090)
+
+**Sprint Review:** 11/27: The stakeholder reviewed the current product increment, and discussed the product backlog ordering. He was happy with the progress during the sprint just completed, and believed that the current product backlog (which reflected changes from the previous sprint review on 11/14) still reflected his priorities as a user, with "View class effort" and "Search class list" as the most important things to be done.
+
+##Part 4
+
+**Forecast**: 3
+
+**Forecast Rationale:** Yesterday's weather (current forecast = previous velocity)
+
+**Current Sprint Kanban Board:** https://trello.com/b/R462ru7U/current-sprint  **Note 1**: Only dev team members participated in pulling backlog items into sprint backlog.  **Note 2:** Backlog items representing more than half the size of the spring forecast were subdivided into smaller stories.
+
+**Task Decomposition**: See inside each sprint backlog item, under chacklist labeled "Tasks."
+
+**Sprint Burndown Chart**: **[ADD]**
+
+**Daily Scrums:** 
+
+**Documentation of Daily Scrum:**
+*Documentation of **[INSERT DATE]** Daily Scrum:
+
+Damian: 
+
+Alec: 
+
+Than: 
+
+Tarek: 
+
+Walt: 
+
+Wes: 
+
+**Screenshot of Pair/Mob Programming:** 
+
+**BDD Test Results:**
+The team completed three BDD tests using Cucumber and Selenium. See BDD test result info and screenshot in the following document. **UPDATE WITH NEW DOC FOR PART 4**
+
+**Continuous Integration Solution & Continuous Deployment Solution:** See PArt 3, above. We are still using Jenking to automatically run tests, build, and deploy to the server.
 
 **How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
 
-**Sprint Review:** 11/27:
+**Sprint Review:** 
+
+
+##Sources
+
+Open Source tools used:
+
+- Bootstrap, getbootstrap.com
+- Thymeleaf, thymeleaf.org
+- Spring Boot, spring.io
+
+Tutorials and Documentation:
+
+- Spring Documentation, at http://spring.io/guides/
+- Thymeleaf Documentation and Tutorials, at http://www.thymeleaf.org/doc/tutorials
+- John Thompson, "Spring Boot Web Application Tutorial" (parts 1-3), at http://springframework.guru/spring-boot-web-application-part-1-spring-initializr/
+- Eugen Baeldung, "Introduction to Using Thymeleaf in Spring," at http://www.baeldung.com/thymeleaf-in-spring-mvc
+- Jquery AZ, "An HTML table plug-in for Bootstrap: with sorting, pagination, checkbox etc.," at http://www.jquery-az.com/an-html-table-plug-in-for-bootstrap-with-sorting-pagination-checkbox-etc/
 
 
 
