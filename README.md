@@ -147,7 +147,7 @@ The team completed three BDD tests using Cucumber and Selenium. See BDD test res
 
 **Sprint Burndown Chart**: **[ADD]**
 
-**Daily Scrums:** 
+**Daily Scrums:** 11/30; 12/4; 12/6; 
 
 **Documentation of Daily Scrum:**
 *Documentation of **[INSERT DATE]** Daily Scrum:
