@@ -33,6 +33,31 @@ public class balanceController {
         return "welcome";
     }
 
+    @RequestMapping(value = "/search.html", method = RequestMethod.GET)
+    public String search(Model model) {
+        model.addAttribute("courses", courseRepository.findAll());
+        return "search";
+    }
+
+    @RequestMapping(value="/admin.html", method=RequestMethod.GET)
+    String admin(){
+        return "admin";
+    }
+
+    @RequestMapping(value="/discussion.html", method=RequestMethod.GET)
+    String discussion(){
+        return "discussion";
+    }
+
+    @RequestMapping(value="/help.html", method=RequestMethod.GET)
+    String help(){
+        return "help";
+    }
+    @RequestMapping(value="/logout.html", method=RequestMethod.GET)
+    String logout(){
+        return "logout";
+    }
+
     @RequestMapping(value="/", method=RequestMethod.GET)
     String index(Model model, Course course){
         model.addAttribute("courses", courseRepository.findAll());
@@ -58,6 +83,8 @@ public class balanceController {
         model.addAttribute("courses", courseRepository.findAll());
         return "viewcourses";
     }
+
+
 
     @RequestMapping(value = "/listcourses", method = RequestMethod.GET)
     public String listCourses(Model model) {
