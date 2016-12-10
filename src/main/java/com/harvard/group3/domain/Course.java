@@ -5,6 +5,7 @@ import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.ArrayList;
 
 /**
  * Created by tajjour on 2016-11-12.
@@ -26,7 +27,9 @@ public class Course {
     private int maxNumOfEnrollments;    //Max number of enrollment in class
     private int courseLevel;            //Course Level i.e 1st year, 2nd year etc.
     private String style;               //Style of the course i.e online, on-campus, hybrid
-    private int workload;               //Hours per week
+    public int workload;               //Hours per week
+    private int averageWorkload;
+    private ArrayList<Integer> workloadArray = new ArrayList<>();
 
 
     public Course() {
@@ -41,14 +44,33 @@ public class Course {
         this.maxNumOfEnrollments = maxNumOfEnrollments;
         this.courseLevel = courseLevel;
         this.style = style;
-        this.workload = workload;
+        workloadArray.add(workload);
+        this.averageWorkload = getAverageWorkload();
     }
 
     public Course(String school, String name, String number, int workload) {
         this.school = school;
         this.number = number;
         this.name = name;
-        this.workload = workload;
+        workloadArray.add(workload);
+        this.averageWorkload = getAverageWorkload();
+    }
+
+    public ArrayList<Integer> getWorkloadArray () {
+        return workloadArray;
+    }
+
+    public int calculateAverageWorkload() {
+        int sum = 0;
+        for (int reportedWorkload : workloadArray) {
+            sum += reportedWorkload;
+        }
+        return sum / workloadArray.size();
+    }
+
+    public void addAndRecalculateWorkload(int newWorkload) {
+        workloadArray.add(newWorkload);
+        averageWorkload = calculateAverageWorkload();
     }
 
     public String getSchool() {
@@ -109,6 +131,10 @@ public class Course {
 
     public int getWorkload() {
         return workload;
+    }
+
+    public int getAverageWorkload() {
+        return averageWorkload;
     }
 
     public void setWorkload(int workload) {
