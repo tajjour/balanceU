@@ -13,6 +13,23 @@ body {
 }
 
 
+.searchbox{
+    margin-bottom: 10px;
+}
+.addclassform{
+    position: absolute;
+    margin-top: 50px;
+}
+
+.buttons{
+    text-align: center;
+    vertical-align: middle;
+}
+
+.contianerForm{
+    text-align: center;
+    vertical-align: middle;
+}
 /*
  * Global add-ons
  */
@@ -71,7 +88,6 @@ body {
     background-color: #428bca;
 }
 
-
 .footer {
     position: absolute;
     bottom: 0;
@@ -80,6 +96,7 @@ body {
     height: 60px;
     background-color: #f5f5f5;
 }
+
 
 /*
  * Main content

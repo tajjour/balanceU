@@ -5,7 +5,11 @@
     <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.1/css/bootstrap.min.css"
           th:href="@{/webjars/bootstrap/3.3.1/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
     <link rel="stylesheet" th:href="@{/css/dashboard.css}" />
-    <title>Add Courses</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css"/>
+    <script src="//code.jquery.com/jquery.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+    <title>View Courses</title>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -39,6 +43,9 @@
     </div>
 </nav>
 
+
+
+<!--
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 main">
@@ -74,6 +81,46 @@
         </div>
     </div>
 </div>
+-->
+<div class="row">
+    <h3 class="col-md-4 col-md-offset-4">End of Course Evaluation</h3>
+    <div class="row">
+        <form class="addclassform" action="#" th:action="@{/addclass.html}" th:object="${course}" method="post" role="form">
+            <!--<div class="form-group col-md-4 col-md-offset-6">
+                <label for="schoolname">School Name</label>
+                <input type="text" class="form-control" id="schoolname" placeholder="School Name" th:field="*{school}"/>
+            </div>-->
+            <div class="form-group col-md-4 col-md-offset-4">
+                <label for="coursenumber">School Name</label>
+                <select class="form-control" id="schoolList" name="schoolList" th:field="*{school}">
+                    <option value="">Select University</option>
+                    <!--<option th:each="test : ${tests}"
+                            th:value="${test.testCode}"
+                            th:text="${test.testCode}+' : '+${test.testName}"></option>-->
+                    <option value="Georgetown University">Georgetown University</option>
+                    <option value="Harvard University">Harvard University</option>
+                    <option value="Boston University">Boston University</option>
+                    <option value="Yale University">Yale University</option>
+                    <option value="Harvard Extension School">Harvard Extension School</option>
+                </select>
+            </div>
+            <div class="form-group col-md-4 col-md-offset-4">
+                <label for="coursenumber">Course name</label>
+                <input type="text" class="form-control" id="coursename" placeholder="Course Name" th:field="*{name}"/>
+            </div>
+            <div class="form-group col-md-4 col-md-offset-4">
+                <label for="coursenumber">Course Number</label>
+                <input type="text" class="form-control" id="coursenumber" placeholder="Course Number" th:field="*{number}"/>
+            </div>
+            <div class="form-group col-md-4 col-md-offset-4">
+                <label for="workload">Workload</label>
+                <input type="text" class="form-control" id="workload" placeholder="Workload in Hours" th:field="*{workload}"/>
+            </div>
+            <button type="submit" class="btn btn-primary col-md-2 col-md-offset-5">Submit</button>
+        </form>
+    </div>
+</div>
+
 </body>
 <footer class="footer">
     <div class="container">
@@ -81,3 +128,4 @@
     </div>
 </footer>
 </html>
+
