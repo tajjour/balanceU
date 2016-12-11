@@ -44,6 +44,7 @@ public class Course {
         this.maxNumOfEnrollments = maxNumOfEnrollments;
         this.courseLevel = courseLevel;
         this.style = style;
+        this.workload = workload;
         workloadArray.add(workload);
         this.averageWorkload = getAverageWorkload();
     }
@@ -54,6 +55,7 @@ public class Course {
         this.name = name;
         workloadArray.add(workload);
         this.averageWorkload = getAverageWorkload();
+        this.workload = workload;
     }
 
     public ArrayList<Integer> getWorkloadArray () {
