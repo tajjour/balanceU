@@ -84,6 +84,14 @@ public class balanceController {
         return "viewcourses";
     }
 
+    @RequestMapping(value = "/viewcourses", params={"addWorkloadReport"})
+    public String addWorkloadReport(Course course, BindingResult bindingResult, Model model) {
+        if (bindingResult.hasErrors()) return "index";
+        course.addAndRecalculateWorkload(course.workload);
+        model.addAttribute("courses", courseRepository.findAll());
+        return "viewcourses";
+    }
+
 
 
     @RequestMapping(value = "/listcourses", method = RequestMethod.GET)
