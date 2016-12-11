@@ -163,7 +163,7 @@ Tarek: Will work on html/thymeleaf issues on remaining stories; no impediments f
 Walt: Has been prepping information radiators for effective sprint review; will coordinate with Damian for remaining issues; no impediments foreseen.
 
 
-**Screenshot of Pair/Mob Programming:** 
+**Screenshot of Pair/Mob Programming:** See Part4_PairProgramming.jpg, in repo above, showing pair programming over Webex.
 
 **BDD Test Results:**
 The team completed three BDD tests using Cucumber and Selenium. See BDD test result info and screenshot in the following document. **UPDATE WITH NEW DOC FOR PART 4**
