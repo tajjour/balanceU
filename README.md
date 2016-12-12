@@ -147,33 +147,32 @@ The team completed three BDD tests using Cucumber and Selenium. See BDD test res
 
 **Sprint Burndown Chart**: **[ADD]**
 
-**Daily Scrums:** 
+**Daily Scrums:** 11/30; 12/4; 12/6; 12/10
 
 **Documentation of Daily Scrum:**
-*Documentation of **[INSERT DATE]** Daily Scrum:
+*Documentation of 12/10 Daily Scrum:
 
-Damian: 
+Damian: Working Jenkins issues; will meet separately after meeting to work with Than on remaining issues. No impediments foreseen.
 
-Alec: 
+Alec: Still trying to get adding workload functionality to work since change from single to average workload; will coordinate with Tarek on remaining issues; no impediments foreseen.
 
-Than: 
+Than: Will work with Damian on pending Jenkins issues; no impediments foreseen.
 
-Tarek: 
+Tarek: Will work on html/thymeleaf issues on remaining stories; no impediments foreseen.
 
-Walt: 
+Walt: Has been prepping information radiators for effective sprint review; will coordinate with Damian for remaining issues; no impediments foreseen.
 
-Wes: 
 
-**Screenshot of Pair/Mob Programming:** 
+**Screenshot of Pair/Mob Programming:** See Part4_PairProgramming.jpg, in repo above, showing pair programming over Webex.
 
 **BDD Test Results:**
 The team completed three BDD tests using Cucumber and Selenium. See BDD test result info and screenshot in the following document. **UPDATE WITH NEW DOC FOR PART 4**
 
-**Continuous Integration Solution & Continuous Deployment Solution:** See PArt 3, above. We are still using Jenking to automatically run tests, build, and deploy to the server.
+**Continuous Integration Solution & Continuous Deployment Solution:** See Part 3, above. We are still using Jenking to automatically run tests, build, and deploy to the server.
 
 **How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
 
-**Sprint Review:** 
+**Sprint Review Rehearsal:** Conducted on 12/11.
 
 
 ##Sources
