@@ -145,12 +145,11 @@ The team completed three BDD tests using Cucumber and Selenium. See BDD test res
 
 **Task Decomposition**: See inside each sprint backlog item, under chacklist labeled "Tasks."
 
-**Sprint Burndown Chart**: See Sprint_3_Burndown_Chart in repo, above.
+**Sprint Burndown Chart**: See Sprint_3_Burndown_Chart.png in repo, above.
 
 **Daily Scrums:** 11/30; 12/4; 12/6; 12/10; 12/12
 
-**Documentation of Daily Scrum:**
-*Documentation of 12/10 Daily Scrum:
+**Documentation of 12/10 Daily Scrum:**
 
 Damian: Working Jenkins issues; will meet separately after meeting to work with Than on remaining issues. No impediments foreseen.
 
