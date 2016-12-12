@@ -166,7 +166,7 @@ Walt: Has been prepping information radiators for effective sprint review; will 
 **Screenshot of Pair/Mob Programming:** See Part4_PairProgramming.jpg, in repo above, showing pair programming over Webex.
 
 **BDD Test Results:**
-The team completed three BDD tests using Cucumber and Selenium. See BDD test results info and screenshot in the following document. **UPDATE WITH NEW DOC FOR PART 4**
+The team completed three BDD tests using Cucumber and Selenium. See BDD test results  info and screenshot in the following document. **UPDATE WITH NEW DOC FOR PART 4**
 
 **Continuous Integration Solution & Continuous Deployment Solution:** See Part 3, above. We are still using Jenkins to automatically run tests, build, and deploy to the server.
 
