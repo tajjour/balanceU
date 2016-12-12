@@ -64,9 +64,9 @@
                     <tr>
                         <th data-sortable="true">Name</th>
                         <th data-sortable="true">School</th>
-                        <th>Number</th>
-                        <th>Hours</th>
-                        <th>Action</th>
+                        <th data-sortable="true">Number</th>
+                        <th data-sortable="true">Hours</th>
+                        <!--<th>Action</th>-->
                     </tr>
                     </thead>
                     <tbody>
@@ -79,11 +79,11 @@
                         <td th:text="${course.school}">default</td>
                         <td th:text="${course.number}">0</td>
                         <td th:text="${course.workload}">0</td>
-                        <td class="buttons">
+                        <!--<td class="buttons">
                             <div>
                                 <a href="/addclass.html" class="btn btn-default btn-sm" role="button">Add Feedback</a>
                             </div>
-                        </td>
+                        </td>-->
                     </tr>
                     </tbody>
                 </table>
