@@ -145,7 +145,7 @@ The team completed three BDD tests using Cucumber and Selenium. See BDD test res
 
 **Task Decomposition**: See inside each sprint backlog item, under chacklist labeled "Tasks."
 
-**Sprint Burndown Chart**: **[ADD]**
+**Sprint Burndown Chart**: See Sprint_3_Burndown_Chart in repo, above.
 
 **Daily Scrums:** 11/30; 12/4; 12/6; 12/10; 12/12
 
@@ -168,13 +168,15 @@ Walt: Has been prepping information radiators for effective sprint review; will 
 **BDD Test:**
 The team completed  BDD tests using Cucumber and Selenium. See cucumber folder under src/test/java/com/harvard/group3/cucumber.
 
-**Unit Tests**: See various test classes under src/test/java/com/harvard/group3. (New tests are all in CourseClassTest.java.)
+**Unit Tests**: See various test classes under src/test/java/com/harvard/group3. (New unit tests are all in CourseClassTest.java.)
 
 **Continuous Integration Solution & Continuous Deployment Solution:** See Part 3, above. We are still using Jenkins to automatically run tests, build, and deploy to the server.
 
 **How to View Working Software:** [Link to working build.](http://ec2-35-162-120-2.us-west-2.compute.amazonaws.com:9090/)
 
 **Sprint Review Rehearsal:** Conducted on 12/11.
+
+**Post-Sprint-Review Changes** will be added by Product Owner after official sprint review.
 
 
 ##Sources
