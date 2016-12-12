@@ -9,6 +9,8 @@
     <script src="//code.jquery.com/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+    <script src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
+    <script src="/js/balanceu.js"></script>
     <title>View Courses</title>
 </head>
 <body>
@@ -29,8 +31,8 @@
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="/welcome.html">Home</a></li>
                 <li><a href="/viewcourses.html">View Courses</a></li>
-                <li><a href="/search.html">Search Class</a></li>
-                <li class="active"><a href="/addclass.html">Course Feedback</a></li>
+                <li class="active"><a href="/search.html">Search Class</a></li>
+                <li><a href="/addclass.html">Course Feedback</a></li>
                 <li><a href="/discussion.html">Discussion</a></li>
                 <li><a href="/help.html">Help</a></li>
                 <li><a href="/admin.html">Admin</a></li>
@@ -43,41 +45,52 @@
     </div>
 </nav>
 
-<div class="row">
-    <h3 class="col-md-4 col-md-offset-4">End of Course Evaluation</h3>
+<div class="container-fluid">
     <div class="row">
-        <form class="addclassform" action="#" th:action="@{/addclass.html}" th:object="${course}" method="post" role="form">
-            <div class="form-group col-md-4 col-md-offset-4">
-                <label for="coursenumber">School Name</label>
-                <select class="form-control" id="schoolList" name="schoolList" th:field="*{school}">
-                    <option value="">Select University</option>
-                    <!--<option th:each="test : ${tests}"
-                            th:value="${test.testCode}"
-                            th:text="${test.testCode}+' : '+${test.testName}"></option>-->
-                    <option value="Georgetown University">Georgetown University</option>
-                    <option value="Harvard University">Harvard University</option>
-                    <option value="Boston University">Boston University</option>
-                    <option value="Yale University">Yale University</option>
-                    <option value="Harvard Extension School">Harvard Extension School</option>
-                </select>
+        <div class="col-md-12 main">
+            <h2 class="sub-header">Search</h2>
+            <div class="row searchbox">
+                <div class="col-lg-4 col-lg-offset-4">
+                    <input type="search" id="search" value="" class="form-control" placeholder="Search Course"/>
+                </div>
             </div>
-            <div class="form-group col-md-4 col-md-offset-4">
-                <label for="coursenumber">Course name</label>
-                <input type="text" class="form-control" id="coursename" placeholder="Course Name" th:field="*{name}"/>
+            <div class="table-responsive">
+                <table data-toggle="table"
+                       data-classes="table table-hover table-condensed"
+                       data-striped="true"
+                       data-sort-name="School"
+                       data-sort-order="desc" id="table">
+                    <thead>
+                    <tr>
+                        <th data-sortable="true">Name</th>
+                        <th data-sortable="true">School</th>
+                        <th>Number</th>
+                        <th>Hours</th>
+                        <th>Action</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <!--/*@thymesVar id="courses" type=""*/-->
+                    <tr th:each="course : ${courses}">
+                        <!--/*@thymesVar id="name" type="text"*/-->
+                        <!--/*@thymesVar id="course" type=""*/-->
+                        <td th:text="${course.name}">default</td>
+                        <!--/*@thymesVar id="school" type=""*/-->
+                        <td th:text="${course.school}">default</td>
+                        <td th:text="${course.number}">0</td>
+                        <td th:text="${course.workload}">0</td>
+                        <td class="buttons">
+                            <div>
+                                <a href="/addclass.html" class="btn btn-default btn-sm" role="button">Add Feedback</a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
-            <div class="form-group col-md-4 col-md-offset-4">
-                <label for="coursenumber">Course Number</label>
-                <input type="text" class="form-control" id="coursenumber" placeholder="Course Number" th:field="*{number}"/>
-            </div>
-            <div class="form-group col-md-4 col-md-offset-4">
-                <label for="workload">Workload</label>
-                <input type="text" class="form-control" id="workload" placeholder="Workload in Hours" th:field="*{workload}"/>
-            </div>
-            <button type="submit" class="btn btn-primary col-md-2 col-md-offset-5">Submit</button>
-        </form>
+        </div>
     </div>
 </div>
-
 </body>
 <footer class="footer">
     <div class="container">
@@ -85,4 +98,3 @@
     </div>
 </footer>
 </html>
-
