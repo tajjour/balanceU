@@ -45,16 +45,14 @@ public class Course {
         this.courseLevel = courseLevel;
         this.style = style;
         this.workload = workload;
-        workloadArray.add(workload);
-        this.averageWorkload = getAverageWorkload();
+        addAndRecalculateWorkload(workload);
     }
 
     public Course(String school, String name, String number, int workload) {
         this.school = school;
         this.number = number;
         this.name = name;
-        workloadArray.add(workload);
-        this.averageWorkload = getAverageWorkload();
+        addAndRecalculateWorkload(workload);
         this.workload = workload;
     }
 
@@ -66,6 +64,9 @@ public class Course {
         int sum = 0;
         for (int reportedWorkload : workloadArray) {
             sum += reportedWorkload;
+        }
+        if (workloadArray.size() == 0) {
+            return 0;
         }
         return sum / workloadArray.size();
     }
