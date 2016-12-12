@@ -176,7 +176,7 @@ The team completed  BDD tests using Cucumber and Selenium. See cucumber folder u
 
 **Sprint Review Rehearsal:** Conducted on 12/11.
 
-**Post-Sprint-Review Changes** will be added by Product Owner after official sprint review.
+**Post-Sprint-Review Changes to Product Backlog** will be added by Product Owner after official sprint review.
 
 
 ##Sources
