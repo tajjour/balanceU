@@ -165,7 +165,7 @@ Walt: Has been prepping information radiators for effective sprint review; will 
 **Screenshot of Pair/Mob Programming:** See Part4_PairProgramming.jpg, in repo above, showing pair programming over Webex.
 
 **BDD Test:**
-The team completed  BDD tests using Cucumber and Selenium. See cucumber folder under src/test/java/com/harvard/group3/cucumber.
+The team completed  BDD tests using Cucumber and Selenium. See cucumber folder under src/test/java/com/harvard/group3/cucumber. Also, see BDD test result info and screenshots in the following document. https://github.com/tajjour/balanceU/blob/master/Sprint%203%20-%20BDD%20Testing%20Results.docx
 
 **Unit Tests**: See various test classes under src/test/java/com/harvard/group3. (New unit tests are all in CourseClassTest.java.)
 
