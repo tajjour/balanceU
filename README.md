@@ -170,7 +170,7 @@ The team completed three BDD tests using Cucumber and Selenium. See BDD test res
 
 **Continuous Integration Solution & Continuous Deployment Solution:** See Part 3, above. We are still using Jenkins to automatically run tests, build, and deploy to the server.
 
-**How to View Working Software:** [Link to working build.](http://54.183.213.247:8080/)
+**How to View Working Software:** [Link to working build.](http://ec2-35-162-120-2.us-west-2.compute.amazonaws.com:9090/)
 
 **Sprint Review Rehearsal:** Conducted on 12/11.
 
