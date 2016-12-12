@@ -145,7 +145,7 @@ The team completed three BDD tests using Cucumber and Selenium. See BDD test res
 
 **Task Decomposition**: See inside each sprint backlog item, under chacklist labeled "Tasks."
 
-**Sprint Burndown Chart**: [Click here to view the burndown chart.](https://github.com/tajjour/balanceU/blob/master/Sprint4Burndown.png)
+**Sprint Burndown Chart**: [Click here to view the burndown chart.](https://github.com/tajjour/balanceU/blob/master/Sprint3Burndown.png)
 
 **Daily Scrums:** 11/30; 12/4; 12/6; 12/10; 12/12
 
