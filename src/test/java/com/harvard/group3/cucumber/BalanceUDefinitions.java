@@ -65,7 +65,7 @@ public class BalanceUDefinitions {
     @When("^I follow the URL to the class list$")
     public void iFollowTheURLToTheClassList() throws Throwable {
         // Click the link to the class list.
-        driver.findElement(By.linkText("Course List")).click();
+        driver.findElement(By.linkText("View Courses")).click();
     }
 
     @Then("^I should see the class list$")
@@ -73,6 +73,46 @@ public class BalanceUDefinitions {
         // Confirm the class list is viewable
         String innerText = driver.findElement(By.xpath("//table/thead/tr/th")).getText();
         assertEquals("Name", innerText);
+
+        //Close the browser
+        driver.quit();
+    }
+
+    @Given("^I am on the search class page$")
+    public void iAmOnTheSearchClassPage() throws Throwable {
+        DesiredCapabilities caps = DesiredCapabilities.internetExplorer();
+        caps.setCapability("ignoreZoomSetting", true);
+        caps.setCapability("initialBrowserUrl", "http://localhost:9090/search.html");
+        driver = new InternetExplorerDriver(caps);
+    }
+
+    @When("^Type a class title into the search box$")
+    public void typeAClassTitleIntoTheSearchBox() throws Throwable {
+        WebElement inputBox = driver.findElement(By.id("search"));
+        inputBox.sendKeys("Psychology");
+    }
+
+    @Then("^I should see the class list filtered by that title$")
+    public void iShouldSeeTheClassListFilteredByThatTitle() throws Throwable {
+        // Confirm the class list is viewable
+        String innerText = driver.findElement(By.xpath("//table/tbody/tr[3]/td")).getText();
+        assertEquals("Intro to Psychology", innerText);
+
+        //Close the browser
+        driver.quit();
+    }
+
+    @When("^Type a course number into the search box$")
+    public void typeACourseNumberIntoTheSearchBox() throws Throwable {
+        WebElement inputBox = driver.findElement(By.id("search"));
+        inputBox.sendKeys("101");
+    }
+
+    @Then("^I should see the class list filtered by that course number$")
+    public void iShouldSeeTheClassListFilteredByThatCourseNumber() throws Throwable {
+        // Confirm the class list is viewable
+        String innerText = driver.findElement(By.xpath("//table/tbody/tr[2]/td")).getText();
+        assertEquals("Calculus 1", innerText);
 
         //Close the browser
         driver.quit();
