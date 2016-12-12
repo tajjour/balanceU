@@ -53,8 +53,9 @@ public class Course {
         this.school = school;
         this.number = number;
         this.name = name;
-        workloadArray.add(workload);
-        this.averageWorkload = getAverageWorkload();
+  /*      workloadArray.add(workload);
+        this.averageWorkload = calculateAverageWorkload();*/
+        addAndRecalculateWorkload(workload);
         this.workload = workload;
     }
 
@@ -136,7 +137,7 @@ public class Course {
     }
 
     public int getAverageWorkload() {
-        return averageWorkload;
+        return calculateAverageWorkload();
     }
 
     public void setWorkload(int workload) {

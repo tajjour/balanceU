@@ -153,5 +153,54 @@ public class CourseClassTest {
         assertEquals(20, course.getWorkload());
     }
 
+    @Test
+    public void testGetAverageWorkloadOneWorkload() {
+        Course course = makeTestCourse();
+        assertEquals(10, course.getAverageWorkload());
+    }
+
+    @Test
+    public void testGetAverageWorkloadTwoWorkloads() {
+        Course course = makeTestCourse();
+        course.addAndRecalculateWorkload(20);
+        assertEquals(15, course.getAverageWorkload());
+    }
+
+    @Test
+    public void addOneWorkloadAndRecalculate() {
+        Course course = makeTestCourse();
+        course.addAndRecalculateWorkload(20);
+        assertEquals(15, course.getAverageWorkload());
+    }
+
+    @Test
+    public void addMultipleWorkloadsAndRecalculate() {
+        Course course = makeTestCourse();
+        course.addAndRecalculateWorkload(20);
+        course.addAndRecalculateWorkload(5);
+        course.addAndRecalculateWorkload(25);
+        assertEquals(15, course.getAverageWorkload());
+    }
+
+
+
+    @Test
+    public void getInitialWorkloadArray() {
+        Course course = new Course();
+        assertNotNull("Null response", course.getWorkloadArray());
+    }
+
+    @Test
+    public void ChangeAndGetWorkloadArray() {
+        Course course = new Course();
+        course.addAndRecalculateWorkload(5);
+        assertNotNull("Null response", course.getWorkloadArray());
+    }
+
+    @Test
+    public void getInitialElementFromWorkloadArray() {
+        Course course = new Course();
+        assertEquals(java.util.Optional.of(10), course.getWorkloadArray().get(1));
+    }
 
 }
